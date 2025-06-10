@@ -1,0 +1,34 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+  color: #333;
+}
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #0066cc;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main section {
+  margin-bottom: 2rem;
+}
+footer {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
