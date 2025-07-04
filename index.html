@@ -1,36 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dr Narsimlu Kemsaram – Research Fellow</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Narsimlu Kemsaram</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="assets/img/profile.jpg" alt="Narsimlu Kemsaram" class="profile-photo">
-    <h1>Dr Narsimlu Kemsaram</h1>
-    <p>Research Fellow in Multi‑Robot Systems – Dept of CS, UCL, London</p>
-    <nav>
-      <a href="about.html">About</a> |
-      <a href="research.html">Research</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
+  <div class="toggle-container">
+    <button id="toggleButton">Toggle Dark Mode</button>
+  </div>
+
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Dr. Narsimlu Kemsaram" class="profile-photo">
+      <h1>Dr. Narsimlu Kemsaram</h1>
+      <p>Research Fellow in Multi-Robot Systems</p>
+      <p>Department of Computer Science, University College London</p>
+      <p>
+        <a href="mailto:n.kemsaram@ucl.ac.uk">n.kemsaram@ucl.ac.uk</a> |
+        <a href="https://profiles.ucl.ac.uk/93825-narsimlu-kemsaram">UCL Profile</a> |
+        <a href="https://scholar.google.com/citations?user=7NjIbL0AAAAJ&hl=en">Google Scholar</a> |
+        <a href="https://orcid.org/0000-0003-4672-6272">ORCID</a> |
+        <a href="https://www.linkedin.com/in/narsimlukemsaram/">LinkedIn</a>
+      </p>
+    </header>
+
     <section>
-      <h2>Research Focus</h2>
-      <p>My research spans multi-agent systems, swarm robotics, multi-UAV coordination, autonomous perception and cooperative robotics.</p>
+      <h2>About</h2>
+      <p>
+        I am a Research Fellow in Multi-Robot Systems in the Department of Computer Science at the University College London (UCL), London, UK. My research focuses on robotics and artificial intelligence.
+      </p>
     </section>
+
     <section>
-      <h2>Latest Publications</h2>
+      <h2>Research Interests</h2>
       <ul>
-        <li>Author A, Author B, Kemsaram N., “Title of paper”, Journal (Year). <a href="#">doi / PDF</a></li>
+        <li>Swarm Robotics</li>
+        <li>Multi-Robot Systems</li>
+        <li>Autonomous Systems</li>
+        <li>Robotics and AI</li>
       </ul>
     </section>
-  </main>
-  <footer>
-    &copy; <span id="year"></span> Narsimlu Kemsaram
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>Research Fellow in Multi-Robot Systems, UCL, UK (2023–Present)</li>
+        <li>Postdoctoral Research Associate, University of Luxembourg, Luxembourg (2021–2022)</li>
+        <li>Postdoctoral Researcher, TU/e, Netherlands (2018–2021)</li>
+        <li>Assistant Researcher, University of Würzburg, Germany (2016–2017)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>
+        PhD in Computer Science and Engineering,<br>
+        Jawaharlal Nehru Technological University, Hyderabad, India
+      </p>
+    </section>
+
+    <section>
+      <h2>Research Projects</h2>
+      <ul>
+        <li>Swarm SSMs: Swarm Spatial Sound Modulators, UCL, EPSRC & UKRI (2023–2026)</li>
+        <li>SESAME & 5G-Sky Drones, University of Luxembourg, EU-H2020 & FNR-CORE (2021–2022)</li>
+        <li>i-CAVE: Cooperative Automated Vehicles, TU/e, Netherlands, NWO (2018–2021)</li>
+        <li>ASMET: Autonomous Sensor Network for Meteors, University of Würzburg, EU-RDF (2016–2017)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Students Supervised</h2>
+      <ul>
+        <li>Ashton Menezes (PhD/PDEng) – Design and Implementation of a Surround Vision System for Cooperative and Autonomous Driving</li>
+        <li>Kiril Dimov (Bachelor's) – A Real-Time Instance Stixel Computation</li>
+        <li>Pim van de Ven (Bachelor's) – Real-Time Object Detection, Lane Detection, and Free Space Detection with TensorFlow for Autonomous Driving</li>
+        <li>Gijs Roelofs (Bachelor's) – Training an in-vehicle Classifier for Platooning using Nvidia DIGITS</li>
+        <li>Sumit Goski (Master's) – Train and Deploy a Custom Multi-Class Object Detection Model for Multi-UAV Systems</li>
+        <li>Ahmed Baahmed (Master's) – Train and Deploy a Custom Multi-Class Object Detection Model for Multi-Rover Systems</li>
+        <li>Aelyn Chong (Master's) – An Autonomous Rock Detection, Classification, and Pose Estimation for Planetary Exploration</li>
+        <li>Peilin Jiang (Master's) – An IR-based Path Planning Algorithm for Multi-Robot Systems</li>
+        <li>Yingying Wang (Master's) – A Multi-Agent Large Language Model for Acoustophoretic Multimodal Interactions using a Swarm of AcoustoBots</li>
+        <li>Alex Lin (Master's) – A Gesture-Based Multi-Agent Visual Learning Model for Acoustophoretic Haptic Interactions using a Swarm of AcoustoBots</li>
+        <li>Shiqi Liu (Master's) – A Multi-Agent Reinforcement Learning Model for Acoustophoretic Multimodal Interactions using a Swarm of AcoustoBots</li>
+        <li>Chenzhe Jin (Master's) – An Acoustophoretic Sentinel ModalAI Drone for Pollination and Plant Management in Vertical Farming</li>
+        <li>Yifan Cai (Master's) – Coordinated Aerial Acoustophoretic Manipulation Using Dual Drones</li>
+        <li>Zirong Jiang (Master's) – A Swarm of Autonomous Acoustic Drones for Search-and-Rescue Missions</li>
+        <li>Ayush Aman (Master's) – Autonomous Sensor Deployment for Bridge Inspection using a Swarm of UAVs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Publications</h2>
+      <ul>
+        <li><strong>Narsimlu Kemsaram, Akin Delibasi, James Hardwick, Bonot Gautam, Diego Martinez Plasencia, and Sriram Subramanian. A Cooperative Contactless Object Transport with Acoustic Robots. 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025), 19-25 October 2025, in Hangzhou, China (Accepted).</li>
+        <li><strong>Narsimlu Kemsaram, James Hardwick, Jincheng Wang, Bonot Gautam, Ceylan Besevli, Giorgos Christopoulos, Sourabh Dogra, Lei Gao, Akin Delibasi, Diego Martinez Plasencia, Orestis Georgiou, Marianna Obrist, Ryuji Hirayama, and Sriram Subramanian. AcoustoBots: A Swarm of Robots for Acoustophoretic Multi-Modal Interactions, Frontiers in Robotics and AI Journal, Volume 12, 2025.</li>
+        <li><strong>Ceylan Besevli, Lei Gao, Narsimlu Kemsaram, Giada Brianza, Orestis Georgiou, Sriram Subramanian, and Marianna Obrist. SONARIOS: A Design Futuring-Driven Exploration of Acoustophoresis. ACM Designing Interactive Systems Conference (DIS 2025), 5-9 July, 2025, Madeira, Portugal (Accepted).</li>
+        <li><strong>Narsimlu Kemsaram, Anweshan Das, and Gijs Dubbelman. A Stixel-Based Stereo Perception for Multi-Robot Systems. In American Institute of Aeronautics and Astronautics Aviation Forum (AIAA Aviation Forum), 12-16 June 2023, San Diego, CA, USA.</li>
+        <li><strong>Narsimlu Kemsaram, Anweshan Das, and Gijs Dubbelman. A Model-Based Design of an Onboard Stereo Vision System: Obstacle Motion Estimation for Cooperative Automated Vehicles. In Springer Nature Applied Sciences Journal, Springer Nature, June 2022, Volume 4, Issue 7, pp. 1-18.</li>
+        <li><strong>...and more on <a href="https://scholar.google.com/citations?user=7NjIbL0AAAAJ&hl=en">Google Scholar</a></strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching</h2>
+      <ul>
+        <li>Postgraduate Teaching Assistant, Aerial Robotics, UCL (2024/25)</li>
+        <li>Postgraduate Teaching Assistant, Multi-Agent Systems, UCL (2024/25)</li>
+        <li>Postgraduate Teaching Assistant, Introduction to Programming for Robotics and AI, UCL (2023/24)</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Dr. Narsimlu Kemsaram</p>
+    </footer>
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
