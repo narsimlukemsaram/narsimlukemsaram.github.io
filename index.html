@@ -5,20 +5,30 @@
   <title>Dr Narsimlu Kemsaram – Research Fellow</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
     .container {
       display: flex;
       flex-direction: row;
       gap: 20px;
+      padding: 30px;
     }
     .sidebar {
       flex: 0 0 300px;
-      border: 1px solid #ccc;
+      background: white;
       padding: 20px;
       border-radius: 10px;
-      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .main {
       flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .profile-photo {
       width: 200px;
@@ -27,23 +37,31 @@
       display: block;
       margin: auto;
     }
-    .sidebar h1 {
-      text-align: center;
-      font-size: 1.4em;
-    }
-    .sidebar p, .sidebar a {
-      font-size: 0.95em;
-      color: #333;
-      text-decoration: none;
-    }
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-    .icon-link {
+    nav.tabs {
       display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+    nav.tabs a {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #555;
+      border-radius: 5px 5px 0 0;
+      background: #eee;
+    }
+    nav.tabs a.active {
+      background: #fff;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .main p, .sidebar p {
+      font-size: 0.95em;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -56,21 +74,29 @@
       <p><strong>Title:</strong> Research Fellow in Multi Robot Systems<br>Dept of Computer Science</p>
       <p><strong>Email (UCL):</strong> <a href="mailto:n.kemsaram@ucl.ac.uk">n.kemsaram@ucl.ac.uk</a></p>
       <p><strong>Email (Personal):</strong> <a href="mailto:narsimlu.kemsaram@gmail.com">narsimlu.kemsaram@gmail.com</a></p>
-      <p><strong>Address:</strong><br>University College London,<br>Department of Computer Science,<br>Third Floor, 169 Euston Road, London,<br>NW1 2AE, United Kingdom</p>
+      <p><strong>Address:</strong><br>University College London,<br>Department of Computer Science,<br>169 Euston Road, London NW1 2AE</p>
       <hr>
       <p><a href="#">Collaboration Network</a></p>
-      <div class="icon-link"><a href="https://github.com/narsimlukemsaram" target="_blank">GitHub</a></div>
-      <div class="icon-link"><a href="https://scholar.google.com/citations?user=narsimlu" target="_blank">Google Scholar</a></div>
-      <div class="icon-link"><a href="https://www.linkedin.com/in/narsimlu-kemsaram/" target="_blank">LinkedIn</a></div>
-      <div class="icon-link"><a href="https://www.researchgate.net/profile/Narsimlu-Kemsaram" target="_blank">ResearchGate</a></div>
+      <p><a href="https://github.com/narsimlukemsaram" target="_blank">GitHub</a></p>
+      <p><a href="https://scholar.google.com/citations?user=narsimlu" target="_blank">Google Scholar</a></p>
+      <p><a href="https://www.linkedin.com/in/narsimlu-kemsaram/" target="_blank">LinkedIn</a></p>
+      <p><a href="https://www.researchgate.net/profile/Narsimlu-Kemsaram" target="_blank">ResearchGate</a></p>
     </div>
-
     <div class="main">
-      <h2>Welcome</h2>
-      <p>This site features Dr. Narsimlu Kemsaram’s academic profile, recent research, and contributions to multi-robot systems, perception, cooperative robotics, and acoustophoretic interactions.</p>
+      <nav class="tabs">
+        <a href="#" class="active">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="#">Research</a>
+        <a href="#">Expertise & Experience</a>
+        <a href="#">Teaching</a>
+      </nav>
+      <section>
+        <h2>Bio</h2>
+        <p>Dr. Narsimlu Kemsaram is a Research Fellow in Multi-Robot Systems with the Department of Computer Science at the University College London (UCL), London, United Kingdom. He holds a Bachelor's, Master's, and PhD in Computer Science. His PhD thesis is on the topic of "Design and Development of Hybrid Autonomous Visual Tracking Algorithm for Unmanned Aerial Vehicles."</p>
+        <p>He has held postdoctoral and research roles in Germany, the Netherlands, and Luxembourg, contributing to EU-H2020, EPSRC, and national research projects related to cooperative robotics, stereo perception, and acoustophoresis. He currently works with the Multi-Sensory Devices (MSD) Group at UCL on the EPSRC Prosperity Partnership project Swarm SSMs.</p>
+      </section>
     </div>
   </div>
-
   <footer style="text-align:center; margin-top:40px;">
     <p>&copy; <span id="year"></span> Narsimlu Kemsaram</p>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
