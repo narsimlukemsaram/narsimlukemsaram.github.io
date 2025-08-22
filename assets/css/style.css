@@ -1,14 +1,13 @@
 body {
-  max-width: 800px;
-  margin: auto;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 0 1rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
   color: #333;
 }
 header {
   text-align: center;
-  margin: 2rem 0;
 }
 .profile-photo {
   width: 150px;
@@ -16,19 +15,19 @@ header {
   border-radius: 50%;
 }
 nav a {
-  margin: 0 0.5rem;
+  margin: 0 10px;
   text-decoration: none;
   color: #0066cc;
 }
 nav a:hover {
   text-decoration: underline;
 }
-main section {
-  margin-bottom: 2rem;
+section {
+  margin-bottom: 20px;
 }
 footer {
   text-align: center;
-  margin: 3rem 0;
-  font-size: 0.9rem;
-  color: #666;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
 }
